@@ -1,0 +1,14 @@
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\bin\Debug\net8.0\ManagerConsoleApp.exe
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\bin\Debug\net8.0\ManagerConsoleApp.deps.json
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\bin\Debug\net8.0\ManagerConsoleApp.runtimeconfig.json
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\bin\Debug\net8.0\ManagerConsoleApp.dll
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\bin\Debug\net8.0\ManagerConsoleApp.pdb
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.AssemblyInfoInputs.cache
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.AssemblyInfo.cs
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.dll
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\refint\ManagerConsoleApp.dll
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.pdb
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.genruntimeconfig.cache
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ref\ManagerConsoleApp.dll
