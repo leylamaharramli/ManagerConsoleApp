@@ -12,3 +12,7 @@ C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8
 C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.pdb
 C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.genruntimeconfig.cache
 C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ref\ManagerConsoleApp.dll
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.csproj.AssemblyReference.cache
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.sourcelink.json
+C:\Users\I novbe\source\repos\ManagerConsoleApp\ManagerConsoleApp\obj\Debug\net8.0\ManagerConsoleApp.csproj.CopyComplete

@@ -11,5 +11,10 @@
             Price = price;
 
         }
+
+        public override string ToString()
+        {
+            return $"{ID}. {Name}/{Price}";
+        }
     }
 }

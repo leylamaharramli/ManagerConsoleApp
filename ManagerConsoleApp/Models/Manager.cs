@@ -1,56 +1,46 @@
-﻿namespace ManagerConsoleApp.Models;
+﻿using Newtonsoft.Json;
+
+namespace ManagerConsoleApp.Models;
 
 public class Manager<T> where T:BaseEntity
 {
-     T[] array = new T[0];
+     List<T> list = [];
+     string _path = "";
+
+    public Manager(string filename)
+    {
+        string currentDirectory = Directory.GetCurrentDirectory();
+        _path = Path.Combine(currentDirectory, "..", "..", "..", "Jsons", filename);
+
+        if (!File.Exists(_path)) 
+        {
+            File.Create(_path);
+        }
+    }
     public  void Add(T entity)
     {
-        foreach(var item in array)
-        {
-      
-            {
-                Array.Resize(ref array, array.Length + 1);
-                array[^1] = entity;
-            }
-    
-           
-        }
+        item = ReadFromJson();
+        item.Add(entity);
         Console.WriteLine("Object successfully added!");
     }
 
-    public  T[] Remove(int id)
+    public List<T> Remove(int id)
     {
-        T[] arr = new T[array.Length - 1];
-        int index = 0;
-        foreach (var item in array)
+        
+        foreach (var item in list)
         {
             if (item.ID == id)
             {
-                continue;
-            }
-            if (index < arr.Length)
-            {
-                arr[index++] = item;
+                list.Remove(item);
+                return list;
             }
         }
-        Console.WriteLine("Object removed from list!");
-        array = arr;
-        return arr;
         throw new ObjectNotFoundException();
     }
 
     public  void Update(T entity)
     {
-        T? existEntity = null;
-
-        foreach(var item in array)
-        {
-            if (item.ID == entity.ID)
-            {
-                existEntity = item;
-                break;
-            }
-        }
+        T? existEntity =  list.Find(x => x.ID == entity.ID);
 
         if (existEntity is null)
          throw new ObjectNotFoundException();
@@ -60,20 +50,40 @@ public class Manager<T> where T:BaseEntity
     
     public  void GetByID(int id)
     {
-        foreach(var item in array)
+        foreach(var item in list)
         {
+            bool productFound = true;
             if (item.ID == id)
                 Console.WriteLine(item.ToString());
-           
+
+            if (!productFound)
+                throw new ObjectNotFoundException();
         }
     }
 
     public  void GetAll()
     {
-        foreach (var item in array)
+        Items = ReadFromJson();
+        foreach (var item in Items)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(item.ToString());
         }
             
     }
+
+    private void WriteToJson(List<T> items)
+    {
+        var json = JsonConvert.SerializeObject(items);
+        using StreamWriter sw = new(_path);
+        sw.Write(json);
+    }
+
+    private List<T> ReadFromJson()
+    {
+        using StreamReader sr = new(_path);
+        var json = sr.ReadToEnd();
+        var data = JsonConvert.DeserializeObject<List<T>> (json) ?? new();
+        return data;
+    }
+    
 }

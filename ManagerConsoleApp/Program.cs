@@ -7,7 +7,7 @@ public class Program
     static void Main()
     {
 
-        Manager<Product> productManager = new();
+        Manager<Product> productManager = new Manager<Product>("products.json");
         while (true)
         {
             try
